@@ -10,11 +10,11 @@ Send a URL to windows to be opened in a new browse (Firefox) tab
 Send text to the windows clipboard.  Relies on clip.exe (bundled with windows since Vista; you can download it for XP) and python on the client (for urlencoding).
 
 # Roadmap/Wishlist
-* paste
+* paste  
     There is no paste.exe to go with clip.exe!  Leave it to MSFT, right? :p I found [this article on the subject] [1] which provides some c# code.  When I've the time to get that up and running I'll include a paste.exe binary
-* file copying
+* file copying  
     I'd like to be able to FTCopy /path/to/my/file and have it copied to my windows machine.  Some security (quarantining, virus scanning (?) removing executable permissions etc) would be good here.
-* security and/or whitelisting
+* security and/or whitelisting  
     Obviously opening URLs, copying to the clipboard, moving files and especially accessing the clipboard from a remote machine presents security concerns.  I plan on incorporating a IP whitelist, then (ideally) implementing a "knock knock" command that could be run on the client to request access, which could be granted for the session on the server.
 
 
