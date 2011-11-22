@@ -18,4 +18,4 @@ Send text to the windows clipboard.  Relies on clip.exe (bundled with windows si
     Obviously opening URLs, copying to the clipboard, moving files and especially accessing the clipboard from a remote machine presents security concerns.  I plan on incorporating a IP whitelist, then (ideally) implementing a "knock knock" command that could be run on the client to request access, which could be granted for the session on the server.
 
 
-[1] http://huddledmasses.org/clipexe-and-the-missing-pasteexe/ "Clip.exe and the missing paste.exe"
+[1]: http://huddledmasses.org/clipexe-and-the-missing-pasteexe/ "Clip.exe and the missing paste.exe"
