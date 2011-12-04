@@ -16,6 +16,10 @@ Send text to the windows clipboard.  Relies on clip.exe (bundled with windows si
     I'd like to be able to FTCopy /path/to/my/file and have it copied to my windows machine.  Some security (quarantining, virus scanning (?) removing executable permissions etc) would be good here.
 * security and/or whitelisting  
     Obviously opening URLs, copying to the clipboard, moving files and especially accessing the clipboard from a remote machine presents security concerns.  I plan on incorporating a IP whitelist, then (ideally) implementing a "knock knock" command that could be run on the client to request access, which could be granted for the session on the server.
-
+* Vim integration
+    There is a [plugin called fakeclip][fakeclip] that looks like it would work well for this.  I plan to set a config variable in vimrc to tell it to not use system specific functions for read/write but FTWin.  I would like to get paste working first.
+* Modularize functions
+    Make each JS function its own file that autoloads, so everything is an extension.  Possibly do this for the bash side as well.
 
 [1]: http://huddledmasses.org/clipexe-and-the-missing-pasteexe/ "Clip.exe and the missing paste.exe"
+[fakeclip]: http://www.vim.org/scripts/script.php?script_id=2098 "fakeclip - pseudo clipboard register for non-GUI version of Vim"
